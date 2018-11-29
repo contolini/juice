@@ -16,6 +16,7 @@ it('cli parses options', function(done) {
   assert.strictEqual(cli.argsToOptions({'optionsFile': 'options.json'}).optionsFile, 'options.json');
   assert.strictEqual(cli.argsToOptions({'extraCss': 'body{color:red;}'}).extraCss, 'body{color:red;}');
   assert.strictEqual(cli.argsToOptions({'insertPreservedExtraCss': 'true'}).insertPreservedExtraCss, true);
+  assert.strictEqual(cli.argsToOptions({'inlinePseudoElements': 'true'}).inlinePseudoElements, true);
   assert.strictEqual(cli.argsToOptions({'applyStyleTags': 'true'}).applyStyleTags, true);
   assert.strictEqual(cli.argsToOptions({'removeStyleTags': 'true'}).removeStyleTags, true);
   assert.strictEqual(cli.argsToOptions({'preserveImportant': 'true'}).preserveImportant, true);
