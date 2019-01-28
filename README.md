@@ -11,7 +11,7 @@ Given HTML, juice will inline your CSS properties into the `style` attribute.
 
 Juice has a number of functions based on whether you want to process a file, HTML string, or a cheerio document, and whether you want juice to automatically get remote stylesheets, scripts and image dataURIs to inline.
 
-To inline HTML without getting remote resources, using default options:
+To inline HTML without getting remote resources, using default optionz:
 
 ```js
 var juice = require('juice');
